@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+
+    <Button
+        android:layout_marginStart="32dp"
+        android:id="@+id/bt_monster"
+        android:layout_width="132dp"
+        android:layout_height="52dp"
+        android:text="@string/monster"
+        android:backgroundTint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/startVideo"
+        android:textSize="18sp"
+        />
+    <Button
+        android:layout_marginEnd="32dp"
+        android:id="@+id/bt_hero"
+        android:layout_width="120dp"
+        android:textSize="18sp"
+        android:layout_height="52dp"
+        android:text="@string/hero"
+        android:textColor="@color/white"
+        android:backgroundTint="#3F8809"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startVideo"
+        />
+    <Button
+        android:layout_marginStart="32dp"
+        android:id="@+id/bt_saveMe"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:text="@string/save_me"
+        android:backgroundTint="#C64921"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_monster"
+        />
+    <Button
+        android:textColor="@color/white"
+        android:layout_marginEnd="32dp"
+        android:id="@+id/bt_awake"
+        android:backgroundTint="#106F9A"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:text="@string/awake_and_alive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_hero"
+        android:textSize="18sp"
+        />
+
+
+
+    <VideoView
+        android:id="@+id/startVideo"
+        android:layout_width="412dp"
+        android:layout_height="520dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
